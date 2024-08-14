@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="/JS/script.js" defer></script>
+    <title>Cronômetro.JS</title>
+</head>
+<body>
+    <main>
+        <h1>Cronômetro.JS</h1>
+        <section class="timer">
+            <div class="time" id="minutes">00</div>
+
+            <div class="separator">:</div>
+
+            <div class="time" id="seconds">00</div>
+
+            <div class="separator">:</div>
+
+            <div class="time" id="milliseconds">000</div>
+        </section>
+
+        <section class="buttons">
+            <button class="btn" id="startBtn" onclick="startTime()">Start</button>
+
+            <button class="btn" id="pauseBtn" onclick="pauseTime()">Pause</button>
+
+            <button class="btn" id="continueBtn" onclick="continueTime()">Continue</button>
+
+            <button class="btn" id="resetBtn" onclick="resetTime()">Reset</button>
+        </section>
+    </main>
+</body>
+</html>
